@@ -85,7 +85,8 @@ model<-function(pop=80000,yr=36000,p1=0.916,d=0.5,s=0.066,sk=0.074,pref.from.beg
 	A2A2h=A2A2*h;
 	A2A2H=A2A2*(1-h);
 	for (b0 in #range){
-		for (b1 in #range)){
+		for (b1 in #range)){ 
+			#range may be e.g. seq(0,1,by=0.01) etc.
 			for (b2 in #range)){
 				for (b3 in #range)){
 					#if (b0>b1&b1<=b2){
